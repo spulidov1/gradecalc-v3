@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
-import type { RunV2Payload } from '@/utils/types'
+import type { RunV2Payload } from '../../utils/types'
+
 
 interface RunRow {
   id: string
