@@ -16,7 +16,7 @@ import {
   calcEndInvertFromSlope,
   calcStartInvertFromSlope,
 } from '@/utils/formulas'
-import type { RunV2Payload, StructureCalcState } from '@/utils/types'
+import type { RunV2Payload, StructureCalcState } from '../../utils/types'
 
 // --- Field rounding helpers (hundredths)
 const round2 = (n: number) =>
