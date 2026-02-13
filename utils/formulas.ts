@@ -105,6 +105,9 @@ export interface StructureResults {
   digRod: number
   bedRod: number
   rimRod: number
+  stoneBottom: number
+  rimElev: number
+  rodAtRim: number
 }
 
 export const calcStructure = (
@@ -121,7 +124,7 @@ export const calcStructure = (
   const dig = bottomOfBox - stoneDepth
   const rim = bottomOfBox + boxHeight
 
-  return {
+return {
     bottomOfBox,
     bed,
     dig,
@@ -129,5 +132,8 @@ export const calcStructure = (
     digRod: hi - dig,
     bedRod: hi - bed,
     rimRod: hi - rim,
+    stoneBottom: dig,
+    rimElev: rim,
+    rodAtRim: hi - rim,
   }
 }
